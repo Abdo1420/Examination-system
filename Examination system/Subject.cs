@@ -92,8 +92,8 @@
                         }
                     }
                 }
-                Console.WriteLine($"Enter the header of question {i + 1}:");
-                string? header = Console.ReadLine();
+               
+                string? header = $"question {i + 1}";
                 Console.WriteLine($"Enter the body of question {i + 1}:");
                 string? body = Console.ReadLine();
                 Console.WriteLine($"Enter the mark of question {i + 1}:");
@@ -111,12 +111,14 @@
                 Answer[] answersList = new Answer[sizeOfAnswers];//الارراي الخاص بالاجوبة
                 for (int j = 0; j < sizeOfAnswers; j++)
                 {
+                   
                     Console.WriteLine($"Enter the text of answer {j + 1} for question {i + 1}:");
                     string? answerText = Console.ReadLine();
                     answersList[j] = new Answer(j + 1, answerText);
                 }
                 Console.WriteLine($"Enter the number of the correct answer for question {i + 1} (1-{sizeOfAnswers}):");
                 int rightAnswerId = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
                 Answer rightAnswer = answersList[rightAnswerId - 1];
                 Question question = new Question(header,body,mark,answersList,rightAnswer);
                 ExamOfSubject.QuestionsOfExam[i] = question;

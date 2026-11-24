@@ -29,8 +29,8 @@ namespace Examination_system
             int markStudent = 0;
             for(int i = 0; i < QuestionsOfExam.Length; i++)
             {
-                Console.WriteLine($"Question {i + 1}:");
-                Console.WriteLine($"Header: {QuestionsOfExam[i].Header}Mark: {QuestionsOfExam[i].Mark}");
+               
+                Console.WriteLine($"Header: {QuestionsOfExam[i].Header}--- Mark: {QuestionsOfExam[i].Mark}");
                 Console.WriteLine($"Body: {QuestionsOfExam[i].Body}");
                 Console.WriteLine("Answers:");
                 for (int j = 0; j < QuestionsOfExam[i].AnswersList.Length; j++)
@@ -62,16 +62,16 @@ namespace Examination_system
                 examScore += QuestionsOfExam[i].Mark;
             }
             TimeSpan endTime = DateTime.Now - startTime;
-
+            Console.Clear();
             foreach (var question in QuestionsOfExam)
             {
                 Console.WriteLine($"Question: {question.Header}");
                 Console.WriteLine($"Your Answer: {question.AnswersList[answers[Array.IndexOf(QuestionsOfExam, question)]]?.answertext}");
                 Console.WriteLine($"Correct Answer: {question.RightAnswer?.answertext}");
-                Console.WriteLine($"Exam Duration: {endTime.TotalMinutes:F2} minutes");
-                Console.WriteLine();
+                Console.WriteLine("-----------------");
             }
             Console.WriteLine($"Your total score: {markStudent}/{examScore}");
+                Console.WriteLine($"Exam time: {endTime.TotalMinutes:F2} minutes");
         }
     }
 }
