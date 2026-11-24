@@ -116,6 +116,15 @@ namespace Examination_system
             Body = body;
             Mark = mark;
         } 
+        public Question(string? header, string? body, int mark, Answer[] answersList, Answer rightAnswer)
+        {
+            Header = header;
+            Body = body;
+            Mark = mark;
+            AnswersList = answersList;
+            RightAnswer = rightAnswer;
+
+        } 
         #endregion
 
     }
