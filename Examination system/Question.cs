@@ -14,7 +14,7 @@ namespace Examination_system
         #region properts
         public string? Header
         {
-            set
+            set 
             {
                 if(string.IsNullOrWhiteSpace(value))
                     throw new ArgumentNullException("please enter the question");

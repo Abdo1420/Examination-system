@@ -68,7 +68,7 @@ namespace Examination_system
                 Console.WriteLine($"Your Answer: {question.AnswersList[answers[Array.IndexOf(_questionsOfExam, question)]]?.answertext}");
                 Console.WriteLine("-----------------");
             }
-                Console.WriteLine($"Exam Time: {endTime.TotalMinutes:F2} minutes");
+                Console.WriteLine($"Exam Time: {endTime.TotalMinutes:F2} minutes"); 
         #endregion
         }
     }

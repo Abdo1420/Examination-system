@@ -28,7 +28,7 @@
         public void CreateExam()
         {
            
-            Console.WriteLine("Enter the type of exam 1: Practical, 2: Final");
+            Console.WriteLine("Enter the type of exam 1: Practical, 2: Final"); 
             int examType = 0;
             while (true)//لعدم ادخال نوع امتحان غير صحيح
             {

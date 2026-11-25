@@ -71,7 +71,7 @@ namespace Examination_system
                 Console.WriteLine("-----------------");
             }
             Console.WriteLine($"Your total score: {markStudent}/{examScore}");
-                Console.WriteLine($"Exam time: {endTime.TotalMinutes:F2} minutes");
+                Console.WriteLine($"Exam time: {endTime.TotalMinutes:F2} minutes"); 
         }
     }
 }

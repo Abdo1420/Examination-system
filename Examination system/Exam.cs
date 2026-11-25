@@ -16,7 +16,7 @@
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException("A negative or zero value cannot be entered.");
+                    throw new ArgumentException("A negative or zero value cannot be entered."); 
 
                 _timeOfExam = value;
             }

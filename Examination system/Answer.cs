@@ -8,7 +8,7 @@ namespace Examination_system
         private string? _AnswerText;
         #endregion
         #region properts
-        public int answerid
+        public int answerid 
         {
             get
             {
